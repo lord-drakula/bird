@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+  background-color: #f1f1ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.navbar {
+  z-index: 1030px;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0px 0px 40px 0px lightblue !important;
+  background-color: rgb(255, 255, 255, 0.60);
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s ease;
+}
+
+.logo {
+  width: 40px;
+}
+
+.home_header_body {
+  background-color:rgb(10, 10, 10, 0.60)
+}
+
+.home_header_body_card {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home_header_body_card_text {
+  color: #fff;
+  max-width: 600px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body {
+  background: url(../img/bg1.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.preload-images {
+  background-image: 
+  url(../img/bg1.jpg),
+  url(../img/bg2.jpg),
+  url(../img/bg3.jpg);
+}
+
+.bg-default {
+  background: url(../img/bg1.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-next {
+  background: url(../img/bg2.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-preview {
+  background: url(../img/bg3.jpg)
+  no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-default, .bg-next, .bg-preview {
+  transition: 0.50s;
+}
+
+.header_btn {
+  color: lime;
+  cursor: pointer;
+  transition: 0.20s;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 5px 35px;
+  border: solid 1px lime;
+  background-color: rgb(10, 10, 10, 0.60);
+  box-shadow: 0px 0px 15px 0px limegreen;
+}
+
+.header_btn:hover {
+  opacity: 0.60;
+}
+
+.LockOn {
+  z-index: 1030;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../img/lg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+
+.fixed-top.scrolled {
+  transition: background-color 200ms linear;
+  background-color: rgb(25, 100, 25, 0.90) !important;
+  box-shadow: 0px 0px 40px 0px limegreen !important;
+}
+
+.fixed-top.scrolled .nav-link {
+  color: lime !important;
+}
+
+.custum {
+  background-color: transparent;
+}
+
+.fixed-top.scrolled .custum_search {
+  border: solid 1px lime !important;
+}
+
+.fixed-top.scrolled .custum_btn {
+  color: lime !important;
+  border: solid 1px lime !important;
+}
+
+.fixed-top.scrolled.navbar {
+  transition: 0.69s;
+  padding: 0px 5px;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: 22%;
+  object-fit: cover;
+}
+
+.fadedfx {
+  background-color: #fe5652;
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a.card_link {
+  color: silver;
+  text-decoration: none;
+}
+
+.fi-sr-heart:hover {
+  color: red;
+}
+
+.fi-sr-shopping-cart:hover {
+  color: lightgreen;
+}
+
+.card_footer {
+  justify-content: space-between;
+}
+
+.fi-sr-bookmark:hover {
+  color: dodgerblue;
+}
+
+.fi-sr-user:hover {
+  color: cornflowerblue;
+}
+
+small {
+  font-family: monospace;
+}
+
+.card_main {
+  overflow: hidden;
+}
+
+.card_images {
+  cursor: pointer;
+  transition: 0.20s;
+  box-shadow: inset 0px 0px 10px 0px lime !important;
+  display: block;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:45%;
+  position:relative;
+  height:0;
+}
+
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.carousel_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.img_control {
+  width: 30px;
+  border-radius: 50%;
+  border: solid 1px lime;
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.img_control:hover {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.link_body {
+  text-decoration: none !important;
+}
+
+/* .ui-front {
+  width: 100%;
+  max-width: 220px;
+  position: fixed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px !important;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.60);
+  z-index: 1030;
+} */
+
+.ui-menu {
+  padding-top: 10px;
+  z-index: 1000000;
+  border: 0;
+  position: fixed;
+  background: transparent;
+  background-color: rgb(255, 255, 255, 0.60);
+}
+
+.ui-menu-item {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 0 !important;
+  position: relative;
+  border-radius: 5px;
+}
+.ui-widget.ui-widget-content {
+  border: none !important;
+}
+
+.custum_search::placeholder {
+  color: gray !important;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.custum_search:focus {
+  color: gray !important;
+  border: solid 1px gray !important;
+}
+
+.sign_in_card {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.form_body {
+  margin: auto;
+  padding: 20px;
+  max-width: 400px;
+  transition: 0.20s;
+  border-radius: 5px;
+  border: solid 1px limegreen;
+  backdrop-filter: blur(10px);
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.form_body:hover {
+  backdrop-filter: blur(15px);
+}
+
+.sign_in_input {
+  color: limegreen;
+  border: solid 1px limegreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.sign_in_input:focus {
+  color: lime;
+  box-shadow: none;
+  border: solid 1px lime;
+  background-color: rgb(0, 0, 0, 0.40);
+}
+
+.sign_btn {
+  width: 100%;
+  padding: 4px;
+  color: lightgreen;
+  border-radius: 5px;
+  border: solid 1px lightgreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+input::-webkit-input-placeholder {
+  color: lightgreen !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: lime !important;
+}
+
+.img_body {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.contact_body {
+  background: #f1f1ff;
+}
+
+.link_body1 {
+  font-size: 13px;
+}
+
+.form_bodys {
+  height: 355px;
+  border-radius: 5px;
+}
+
+.my_btn_body {
+  color: lime !important;
+  background: transparent;
+  border: solid 1px lime !important;
+}

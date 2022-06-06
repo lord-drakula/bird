@@ -1,0 +1,131 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.ui-menu {
+  padding-top: 20px;
+  border: 0;
+  position: fixed;
+  z-index: 1000000;
+  background: transparent;
+}
+
+.ui-menu-item {
+  width: 100%;
+  max-width: 220px;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 600 !important;
+  border-radius: 0 !important;
+  background-color: #ffffffd5;
+}
+
+.ui-widget.ui-widget-content {
+  border: none !important;
+}
+
+.white {
+  color: white;
+}
+
+.navbar-my-color {
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 -5px 30px #000;
+}
+
+.my-icon {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s height;
+}
+
+.my-input::-webkit-input-placeholder {
+  color: #ededed;
+}
+
+.my-input:focus::-webkit-input-placeholder {
+  color: #ccc;
+}
+.custom_search {
+  color: white !important;
+  border: 2px solid limegreen;
+  background-color: #00000060;
+}
+
+.custom_search:focus {
+  background-color: #00000060;
+}
+
+.custom_btn {
+  color: white;
+  font-weight: 600;
+  border: 2px solid limegreen;
+  background-color: #00000060;
+}
+
+.custom_btn:hover {
+  color: #fff;
+  background-color: limegreen;
+}
+/* ! ===================== */
+
+.sign_in_card {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.form_body {
+  margin: auto;
+  padding: 20px;
+  max-width: 400px;
+  transition: 0.20s;
+  border-radius: 5px;
+  border: solid 1px limegreen;
+  backdrop-filter: blur(10px);
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.form_body:hover {
+  backdrop-filter: blur(15px);
+}
+
+.sign_in_input {
+  color: limegreen;
+  border: solid 1px limegreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+.sign_in_input:focus {
+  color: lime;
+  box-shadow: none;
+  border: solid 1px lime;
+  background-color: rgb(0, 0, 0, 0.40);
+}
+
+.sign_btn {
+  width: 100%;
+  padding: 4px;
+  color: lightgreen;
+  border-radius: 5px;
+  border: solid 1px lightgreen;
+  background-color: rgb(0, 0, 0, 0.20);
+}
+
+input::-webkit-input-placeholder {
+  color: lightgreen !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: lime !important;
+}

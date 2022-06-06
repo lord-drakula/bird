@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/gallery.min.css">
+    <link rel="stylesheet" href="../icons/icons.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/logo_coderX.jpg">
+    <title>Reset password</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navigation" class="navbar navbar-expand-md navbar-my-color align-items-center fixed-top">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../img/lg.png" alt="pic" class="logo my-icon">
+        </a>
+        <button
+          class="navbar-toggler third-button"
+          type="button"
+          data-toggle="collapse"
+          data-target="#NavbarToggleDemo01"
+          aria-controls="NavbarToggleDemo01"
+          aria-expanded="false"
+          aria-label="Toggle-navigation"
+        >
+          <div class="animated-icon3">
+            <span></span><span></span><span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="NavbarToggleDemo01">
+          <ul class="navbar-nav mr-auto mt-lg-0">
+            <li class="nav-item-active">
+              <a href="../placeholder/placeholder.html" class="nav-link scroll_a white">Home</a>
+              <span class="sr-only"></span>
+            </li>
+            <li class="nav-item">
+              <a href="#0" class="nav-link scroll_a white">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="../contact.html" class="nav-link scroll_a white">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="./sign-in.html" class="nav-link scroll_a white">Sign-in</a>
+            </li>
+            <li class="nav-item">
+              <a href="./sign-up.html" class="nav-link scroll_a white">Sign-up</a>
+            </li>
+          </ul>
+          <form class="d-flex align-items-center ml-auto my-2 my-lg-0">
+            <input id="tags" class="form-control mr-sm-2 my-input custom_search" type="search" placeholder="Search">
+            <button class="btn btn my-2 my-sm-0 ml-2 custom_btn" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="sign_in_body">
+      <div class="sign_in_card">
+        <form action="" class="form_body">
+          <div class="h4 pb-1 text-light">Reset Password</div>
+          <div class="form-group">
+            <input id="id_email" type="email" class="form-control sign_in_input" maxlength="30" placeholder="Enter email">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label small text-light pb-3" for="exampleCheck1">Generate password</label>
+          </div>
+          <button type="submit" class="sign_btn">Submit</button>
+
+          <div class="m-auto d-flex justify-content-between px-1 pt-3">
+            <a href="./sign-in.html" class="text-light text-monospace text-decoration-none">New Sign-in</a>
+            <a href="./sign-up.html" class="text-light text-monospace text-decoration-none">Free Sign-up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="mt-5">
+
+      <footer class="bg-success p-2 mt-3">
+        <div class=" row m-auto justify-content-center text-center">
+      
+      
+          
+          <div class="col-md-4 mr-auto">
+            <form class="p-2 bg-light rounded">
+              <input type="email" name="email" id="" placeholder="eample@gmail.com" class="form-control">
+              <textarea class="form-control mb-2" placeholder="Your messages"></textarea>
+              <button class="btn btn-sm btn-primary w-100">Messages</button>
+            </form>
+          </div>
+      
+      
+      
+          <div class="col-md-4">
+            <a href="https://t.me/Lord_Drakula" class="text-light link_body mx-2">
+              <img src="../img/tg.jpg" alt="" class="img_control"> Telegram
+            </a>
+            <a href="https://instagram.com/lord_nrx" class="text-light link_body mx-2">
+              <img src="../img/fb.jpg" alt="" class="img_control"> Facebook
+            </a>
+            <a href="https://www.facebook.com/nurmuhammad.abdusamadov.5" class="text-light link_body mx-2">
+              <img src="../img/inst.jpg" alt="" class="img_control"> Instagram
+            </a>
+          </div>
+  
+          <div class="col-md-4">
+            <a href="#0" class="text-light">Contact</a>
+            <a href="#0" class="text-light">Contact</a>
+            <a href="#0" class="text-light">Contact</a>
+          </div>
+  
+        </div>
+      </footer>
+  
+    </div>
+
+    <!-- ! bootstrap js link. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/gallery.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(':input[type="submit"]').prop('disabled', true);
+        $('#id_email').keyup(function () {
+          ToggleButton();
+        });
+      });
+      function ToggleButton() {
+        if (
+          ($('#id_email').val() != '')
+        ) {
+          $(':input[type="submit"]').prop('disabled', false);
+          return true;
+        } else {
+          $(':input[type="submit"]').prop('disabled', true);
+          return false;
+        }
+      };
+    </script>
+
+  </body>
+  </html>
